@@ -15,6 +15,11 @@
 	zmk,physical-layout = &layout_0;
     };
 
+    wired_split {
+        compatible = "zmk,wired-split";
+        device = <&pro_micro_serial>;
+    };
+
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <16>;
