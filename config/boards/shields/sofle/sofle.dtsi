@@ -8,7 +8,7 @@
 #include "sofle-layouts.dtsi"
 #include <dt-bindings/led/led.h>
 
-&uart0 {
+&pro_micro_serial {
     status = "okay";
 };
 
@@ -22,7 +22,7 @@
 
     wired_split {
         compatible = "zmk,wired-split";
-        device = <&uart0>;
+        device = <&pro_micro_serial>;
     };
 
     default_transform: keymap_transform_0 {
