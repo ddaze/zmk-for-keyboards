@@ -8,9 +8,6 @@
 #include "sofle-layouts.dtsi"
 #include <dt-bindings/led/led.h>
 
-&pro_micro_serial {
-    status = "okay";
-};
 
 
 / {
@@ -18,11 +15,6 @@
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
 	zmk,physical-layout = &layout_0;
-    };
-
-    wired_split {
-        compatible = "zmk,wired-split";
-        device = <&pro_micro_serial>;
     };
 
     default_transform: keymap_transform_0 {
